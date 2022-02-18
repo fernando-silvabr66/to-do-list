@@ -12,3 +12,5 @@ window.onload = () => {
   displayAllTodos();
 };
 document.addEventListener('keypress', addNewTodo);
+const clearTodos = document.querySelector('#clearBtn');
+clearTodos.addEventListener('click', Todos.deleteCompletedTodo);
