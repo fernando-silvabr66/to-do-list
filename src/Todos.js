@@ -29,6 +29,12 @@ class Todos {
     }
     localStorage.setItem('todos', JSON.stringify(alltodos));
   };
+
+  static removeItem = (id) => {
+    this.todos = this.todos.filter((todo) => todo.id !== id);
+    this.storage(this.todos);
+    this.updateIndex();
+  };
 }
 
 export default Todos;

@@ -7,15 +7,15 @@ const displayAllTodos = () => {
     let htmlTodo = '';
     Todos.todos.forEach((todo) => {
       htmlTodo = `
-    <li class="litodos todo-${todo.id}">
-      <div class="todo">
-        <input type="checkbox" name="todo" class="check-${todo.id}"> 
-        <input type="text" readonly class="todo-desc" value="${todo.description}" id="input-${todo.id}"/>
-      </div>
-      <i class="fas fa-ellipsis-v three-dot-icon-${todo.id}"></i>
-      <i class="fas fa-trash trash-${todo.id}"></i>
-    </li>
-    `;
+        <li class="litodos todo-${todo.id}">
+          <div class="todo">
+            <input type="checkbox" name="todo" class="check-${todo.id}"> 
+            <input type="text" readonly class="todo-desc" value="${todo.description}" id="input-${todo.id}"/>
+          </div>
+          <i class="fas fa-ellipsis-v three-dot-icon-${todo.id}"></i>
+          <i class="fas fa-trash trash-${todo.id}"></i>
+        </li>
+        `;
 
       const inputItem = document.getElementById('input-todo');
       inputItem.insertAdjacentHTML('afterend', htmlTodo);
