@@ -1,14 +1,11 @@
-import _ from 'lodash';
+// imnpport _ from 'lodash';
+
 import './style.css';
+import addNewTodo from './addTodo.js';
+import displayAllTodos from './listTodo.js';
+import Todos from './Todos.js';
 
-function component() {
-  const element = document.createElement('div');
-
-  // Lodash, now imported by this script
-  
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-
-  return element;
-}
-
-document.body.appendChild(component());
+window.onload = () => {
+  displayAllTodos();
+};
+document.addEventListener('keypress', addNewTodo);
