@@ -42,12 +42,15 @@ const displayAllTodos = () => {
         const targetTodo = document.querySelector(`.todo-${todo.id}`);
         targetTodo.remove();
       });
+
       const checkIcon = document.querySelector(`.check-${todo.id}`);
       const targetTodo = document.querySelector(`#input-${todo.id}`);
+
       checkIcon.addEventListener('change', () => {
         targetTodo.classList.toggle('completed');
         Todos.updateCompleted(todo.id);
       });
+
       if (todo.completed === true) {
         const targetTodo = document.querySelector(`#input-${todo.id}`);
         targetTodo.classList.toggle('completed');

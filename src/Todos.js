@@ -35,6 +35,27 @@ class Todos {
     this.storage(this.todos);
     this.updateIndex();
   };
+
+  static updateCompleted = (id) => {
+    this.todos.forEach((todo) => {
+      if (todo.id === id) {
+        todo.completed = !todo.completed;
+      }
+    });
+    this.storage(this.todos);
+  }
+
+  static deleteCompletedTodo = () => {
+    document.querySelectorAll('.completed').forEach((todoi) => {
+      todoi.parentNode.parentNode.remove();
+    });
+
+    this.todos = this.todos.filter((todoi) => !todoi.completed);
+
+    this.storage(this.todos);
+    this.updateIndex();
+    window.location.reload();
+  };
 }
 
 export default Todos;
