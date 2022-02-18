@@ -39,7 +39,7 @@ class Todos {
   static updateCompleted = (id) => {
     this.todos.forEach((todo) => {
       if (todo.id === id) {
-        todo.completed = true;
+        todo.completed = !todo.completed;
       }
     });
     this.storage(this.todos);
