@@ -1,0 +1,97 @@
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.todo {
+  width: 70%;
+}
+
+.todo-desc {
+  border: none;
+  outline: none;
+  font-size: 1.8rem;
+  letter-spacing: 1.5px;
+  padding: 0.2rem 0.5rem;
+  width: 90%;
+}
+
+.hidden {
+  display: none;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.nav {
+  background-color: #222;
+  height: 9vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.nav h1 {
+  color: white;
+  text-align: center;
+}
+
+body {
+  font-size: 20px;
+  background-color: gainsboro;
+  color: #5c5959;
+}
+
+#to-do-list {
+  width: 60rem;
+  margin: 10rem auto;
+  list-style: none;
+  background-color: #fff;
+  box-shadow: 0.5rem 0.5rem 2rem #222;
+  font-size: 2rem;
+}
+
+#to-do-list li:not(:nth-of-type(2), :last-of-type) {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  flex-wrap: wrap;
+}
+
+#to-do-list li:not(:nth-last-of-type(2))::after {
+  content: "";
+  flex-basis: 100%;
+  border-bottom: 2px solid #5c5959;
+  padding: 1rem 0;
+}
+
+#todo-input {
+  width: 100%;
+  height: 5rem;
+  padding: 1rem 1.5rem;
+  font-size: 2rem;
+  border: none;
+  outline: none;
+  margin-bottom: 2rem;
+}
+
+.option-icon,
+.rotate-icon {
+  cursor: pointer;
+}
+
+#clearBtn {
+  text-align: center;
+  cursor: pointer;
+  margin-top: 1rem;
+  padding: 1.5rem;
+  background-color: gainsboro;
+}
