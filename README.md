@@ -13,7 +13,7 @@ To Do List exercise - Module 2 - Week 2 - Microverse Program
 
 ## Images
 
-![screenshot](app-screenshot.JPG)
+![screenshot](./app-screenshot.JPG)
 
 ## Built With
 
