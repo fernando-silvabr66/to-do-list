@@ -13,7 +13,7 @@ To Do List exercise - Module 2 - Week 2 - Microverse Program
 
 ## Images
 
-![screenshot](https://github.com/fernando-silvabr66/to-do-list/blob/main/app-screenshot.jpg)
+![screenshot](https://github.com/fernando-silvabr66/to-do-list/blob/main/app-screenshot.JPG)
 
 ## Built With
 
